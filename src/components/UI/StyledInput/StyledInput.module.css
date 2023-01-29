@@ -1,0 +1,9 @@
+.StyledInput{
+    width: 20vw;
+    height: 4vh;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid darkblue;
+    background: transparent;
+    cursor: pointer;
+}

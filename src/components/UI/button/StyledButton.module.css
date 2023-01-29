@@ -1,0 +1,10 @@
+.StyledButton{
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid darkblue;
+    margin: 5px 5px;
+    padding: 2px 2px;
+    font-size: 16px;
+}
