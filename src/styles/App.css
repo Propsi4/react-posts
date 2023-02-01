@@ -10,7 +10,6 @@
 .App {
     text-align: center;
   }
-  
 .post{
   display: flex;
   margin-top: 15px;
@@ -18,5 +17,20 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.page_wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.page{
+  border-radius: 3px;
+  margin-right: 3px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px darkblue solid;
+}
+.page_current{
+  border: 2px solid yellow;
+  font-weight: bold;
+}
   

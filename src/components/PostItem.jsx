@@ -11,6 +11,7 @@ const PostItem = (props) => {
                 </div>
         </div>
         <div className='post_btns'>
+          <StyledButton onClick={() => props.open}>Відкрити</StyledButton>
           <StyledButton onClick={() => props.remove(props.post)}>Видалити</StyledButton>
         </div>
       </div>
