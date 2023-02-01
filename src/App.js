@@ -37,7 +37,6 @@ function App() {
   useEffect(() => {
     // Goes to previous page when no posts were found on current page, used for post's remove button
     if(groupedPosts.length === 0 && page > 1) {
-      console.log('page',page)
       setPage(page - 1)
     }
   },[groupedPosts,page])
