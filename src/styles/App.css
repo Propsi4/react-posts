@@ -67,7 +67,7 @@
 }
 .post_view_header{
   display:flex;
-  gap: 100px;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
