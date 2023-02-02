@@ -7,9 +7,9 @@ const PostItem = (props) => {
     return (
       <div className='post'>
         <div className='post_content'>                
-          <strong>{props.number}. {props.post.title}</strong>
+          <strong>{props.number}. {String(props.post.title).substring(0,15)}</strong>
                 <div>
-                    {props.post.body}
+                    {String(props.post.body).substring(0,20)}
                 </div>
         </div>
         <div className='post_btns'>

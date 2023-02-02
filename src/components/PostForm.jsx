@@ -16,6 +16,7 @@ const PostForm = ({create}) => {
     return (
         <form>
         <h1>Створити новий пост</h1>
+        <hr></hr>
         <StyledInput value={post.title} type='text' placeholder='Назва поста' onChange={e => setPost({...post, title: e.target.value})}/>
         <StyledInput value={post.body} type='text' placeholder='Опис' onChange={e => setPost({...post, body: e.target.value})}/>
         <StyledButton onClick={addNewPost}>Створити</StyledButton>

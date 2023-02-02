@@ -15,16 +15,20 @@ const ViewPost = () => {
   const {postsStore} = useContext(StoreContext)
 
   const posts = [...postsStore[0]]
-  
+
   const post = posts.find(p => p.id === Number(id))
 
   return (
     <div className='post_view'>
-      <div className='post_title'>
-      <img className='post_arrow' src={Arrow} alt="Go back" onClick={() => navigate(-1)}/>
+      <div className='post_view_header'>
+        <div onClick={() => navigate(-1)} className='post_view_goback'>
+          <img src={Arrow} alt="Go back" />
+          <h6>Go back</h6>
+      </div>
       <h1>{post.title}</h1>
       </div>
-      <div className='post_desc'>
+      <hr></hr>
+      <div className='post_view_desc'>
       <p>{post.body}</p>
       </div>
     </div>
