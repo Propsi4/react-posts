@@ -5,7 +5,7 @@ const PageList = ({pagesArray, page}) => {
   return (
     <div className="page_wrapper">
     {
-        pagesArray.map(index => <span key={index} onClick={() => navigate({pathname: "/posts", search: "?page="+index})} className={page == index ?
+        pagesArray.map(index => <span key={index} onClick={() => navigate({pathname: "/", search: "?page="+index})} className={page == index ?
             "page page_current" : "page"
           }>{index}</span>)
     }

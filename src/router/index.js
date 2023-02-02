@@ -3,7 +3,7 @@ import ViewPost from "../pages/viewpost";
 
 
 export const publicRoutes = [
-    {path: '/posts', element: <Posts/>},
+    {path: '/', element: <Posts/>},
     {path: '/viewpost', element: <ViewPost/>},
 ]
 
