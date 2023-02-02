@@ -14,10 +14,12 @@ const Posts = () => {
   const [page,setPage] = useState(1)
   let { search } = useLocation();
   const query = new URLSearchParams(search);
-  let page_id = query.get("page");
-  if(page_id === null){
+  let page_id = Number(query.get("page"))
+  if (page_id === 0) {
     page_id = 1
   }
+  //const {page_id} = useParams()
+
   // *---
 
   // posts limit per page
