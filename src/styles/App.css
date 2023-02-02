@@ -33,4 +33,35 @@
   border: 2px solid yellow;
   font-weight: bold;
 }
+.post_view{
+  display: flex;
+  padding: 0px 30px 20px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  position: absolute;
+  top:15%;
+  left:50%;
+  background: rgba(128, 128, 128, 0.087);
+  border-radius: 5px;
+  transform: translate(-50%,-50%);
+}
+.post_body{
+  justify-content: center;
+  align-items: center;
+  background: rgb(26, 23, 23);
+}
+.post_title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.post_arrow{
+  transform: translate(-10%,8%);
+  max-height: 40px;
+  max-width: 40px;
+  cursor: pointer;
+}
   
