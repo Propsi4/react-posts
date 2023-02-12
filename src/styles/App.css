@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-#root{
-  display: flex;
-  justify-content: center;
-}
 .App {
+    width: 100%;
     text-align: center;
   }
+.post_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .post{
   display: flex;
   margin-top: 15px;
@@ -18,10 +19,13 @@
   justify-content: space-between;
   max-width: 80vw;
 }
+.post_form{
+  text-align: center;
+}
 .page_wrapper{
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin: 10px;
 }
 .page{
   border-radius: 3px;
@@ -36,6 +40,7 @@
 }
 .post_view{
   display: flex;
+  width: 100%;
   overflow-wrap: break-word;
   max-width: 80vw;
   padding: 10px 20px 20px 20px;

@@ -1,18 +1,12 @@
-.PopupWindow{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
-}
-.PopupWindowContent{
-    background: white;
-    border-radius: 16px;
-}
-.PopupWindow.active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 24;
+    background-color: white;
+    padding: 40px;
 }

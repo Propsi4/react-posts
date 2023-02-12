@@ -14,7 +14,7 @@ const PostForm = ({create}) => {
         setPost({title: '', body: ''})
     }
     return (
-        <form>
+        <form className='post_form'>
         <h1>Створити новий пост</h1>
         <hr></hr>
         <StyledInput value={post.title} type='text' placeholder='Назва поста' onChange={e => setPost({...post, title: e.target.value})}/>

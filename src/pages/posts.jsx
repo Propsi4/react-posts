@@ -44,7 +44,9 @@ const Posts = () => {
   const [pages,setPages] = useState(1)
 
   // a switch for post creation menu
-  const [visible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const remove = (post) => {
     // removes a post
@@ -54,7 +56,7 @@ const Posts = () => {
   const create = (newPost) => {
     // creates a new post
     setPosts([...posts, newPost])
-    setVisible(false);
+    handleClose()
   }
 
   useEffect(() => {
@@ -81,8 +83,8 @@ const Posts = () => {
 
   return (
     <div className="App">
-      <StyledButton onClick={() => setVisible(true)}>Створити пост</StyledButton>
-      <PopupWindow visible={visible} setVisible={setVisible}>
+      <StyledButton onClick={handleOpen}>Створити пост</StyledButton>
+      <PopupWindow open={open} handleClose={handleClose}>
         <PostForm create={create}/>
       </PopupWindow>
       <hr></hr>
